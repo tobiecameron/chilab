@@ -323,7 +323,7 @@ a:hover {
     .main-nav-font;
     padding: 35px 0 25px 0;
     margin: 0 0 0 35px;
-    max-width:49%;
+    max-width:70%;
     .transition(padding .25s ease-out);
     
     ul {
@@ -633,9 +633,11 @@ body.project-hover-zoom .loaded #grid .item {
 }
 
 #project .gallery {
-  margin: 52px 135px 50px @metaWidth+100px;
+  //margin: 52px 135px 50px @metaWidth+100px;
+  margin: 52px 135px 50px 35px;
   max-width: @contentWidth - @metaWidth;
-  min-width: @metaWidth; /* Foolish to allow detail to be smaller than meta */
+  //min-width: @metaWidth; /* Foolish to allow detail to be smaller than meta */
+  min-width: 90%; /* Foolish to allow detail to be smaller than meta */
   .transition(min-height 0.2s ease-in-out);
   -webkit-transform: translatez(0); /* Fix for flickering in Safari */
   &.sqs-dynamic-data-loading {
@@ -677,13 +679,12 @@ body.project-hover-zoom .loaded #grid .item {
 
 #project .project-item > .meta {
 //new line tobie 19/1 - Hide Link Subtitle from Index
-	//display: none;
+	display: none;
 //	
 
   position: fixed;
   -webkit-backface-visibility: hidden;
-  //width: @metaWidth;
-  width: 0;
+  width: @metaWidth;
   float: left;
   padding: 47px 35px 47px 32px;
   z-index: 3;
@@ -717,7 +718,9 @@ body.meta-unfixed {
 #navigator {
   .switcher {
     display: none; /* shown in index-detail mode */
-
+	//added in visibility hide tc 20/01/2015
+	visibility: hidden;
+	//
     position: fixed;
     width: 78px;
     min-width: 78px;
