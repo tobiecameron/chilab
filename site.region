@@ -71,7 +71,14 @@
             </nav>
           </div>
           {.end}{.end}{.end}
+		  <!-- ADDING SOCIAL -->
+		  	<div class="share-like">
+		          {@|social-button-inline}
+		  	</div>
+		  <!-- END -->
           {squarespace.main-content}
+		  
+		  
         </div>
       </section>
     {.section website}
